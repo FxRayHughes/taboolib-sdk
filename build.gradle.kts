@@ -1,19 +1,18 @@
-import io.izzel.taboolib.gradle.BUKKIT
-import io.izzel.taboolib.gradle.UNIVERSAL
+import io.izzel.taboolib.gradle.*
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    id("io.izzel.taboolib") version "2.0.11"
+    id("io.izzel.taboolib") version "2.0.22"
     kotlin("jvm") version "2.0.0"
 }
 
 taboolib {
     env {
         // 安装模块
-        install(UNIVERSAL, BUKKIT)
+        install(Basic, Bukkit, BukkitHook, BukkitNMSUtil)
     }
-    version { taboolib = "6.1.2-beta10" }
+    version { taboolib = "6.2.0" }
 }
 
 repositories {

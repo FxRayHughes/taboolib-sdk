@@ -1,5 +1,19 @@
 # TabooLib SDK
 
-此 SDK 已停止维护，请使用 IDEA 插件（TabooLib-Devolopment）启动项目。
+## 为什么重启？
 
-![image](https://github.com/user-attachments/assets/f38dcf33-3192-406d-a629-9061eef86bca)
+1. 因为不适应TabooLib插件
+2. IDEA插件总出错所以要有一个项目兜底
+
+## 构建发行版本
+
+发行版本用于正常使用, 不含 TabooLib 本体。
+```
+./gradlew build
+```
+## 构建开发版本
+开发版本包含 TabooLib 本体, 用于开发者使用, 但不可运行。
+```
+./gradlew taboolibBuildApi -PDeleteCode
+```
+> 参数 -PDeleteCode 表示移除所有逻辑代码以减少体积。
