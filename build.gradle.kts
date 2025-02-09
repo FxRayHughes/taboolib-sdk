@@ -4,7 +4,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     java
     id("io.izzel.taboolib") version "2.0.22"
-    kotlin("jvm") version "2.0.0"
+    kotlin("jvm") version "2.1.10"
 }
 
 taboolib {
@@ -12,7 +12,10 @@ taboolib {
         // 安装模块
         install(Basic, Bukkit, BukkitHook, BukkitNMSUtil)
     }
-    version { taboolib = "6.2.2" }
+    version {
+        taboolib = "6.2.3"
+        coroutines = "1.10.1"
+    }
 }
 
 repositories {
