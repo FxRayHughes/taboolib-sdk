@@ -13,7 +13,7 @@ taboolib {
         install(Basic, Bukkit, BukkitHook, BukkitNMSUtil)
     }
     version {
-        taboolib = "6.2.3"
+        taboolib = "6.2.3-20d868d"
         coroutines = "1.10.1"
     }
 }
