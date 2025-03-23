@@ -4,7 +4,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     java
     id("io.izzel.taboolib") version "2.0.22"
-    kotlin("jvm") version "2.1.10"
+    kotlin("jvm") version "1.9.20"
 }
 
 taboolib {
