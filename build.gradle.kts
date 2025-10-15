@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     java
-    id("io.izzel.taboolib") version "2.0.23"
+    id("io.izzel.taboolib") version "2.0.27"
     kotlin("jvm") version "1.9.21"
 }
 
@@ -13,7 +13,7 @@ taboolib {
         install(Basic, Bukkit, BukkitHook, BukkitNMSUtil)
     }
     version {
-        taboolib = "6.2.3-5297ae6"
+        taboolib = "6.2.3-664550e"
         coroutines = "1.8.1"
     }
 }
