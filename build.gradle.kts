@@ -4,7 +4,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     java
     id("io.izzel.taboolib") version "2.0.27"
-    kotlin("jvm") version "2.2.20"
+    kotlin("jvm") version "2.3.0"
 }
 
 taboolib {
@@ -17,7 +17,7 @@ taboolib {
         install(CommandHelper)      // 命令系统
     }
     version {
-        taboolib = "6.2.3-664550e"
+        taboolib = "6.2.4-65252583"
         coroutines = "1.8.1"
     }
     // relocate("top.maplex.arim","top.maplex.youerproject.arim") 工具库重定向
@@ -33,12 +33,18 @@ repositories {
 }
 
 dependencies {
-    compileOnly("ink.ptms.core:v12004:12004:mapped")
-    compileOnly("ink.ptms.core:v12004:12004:universal")
+    // taboo("top.maplex.arim:Arim:1.3.2") 小工具库
+
+    compileOnly("com.google.code.gson:gson:2.8.8")
+
+    compileOnly("ink.ptms.core:v12105:12105-minimize)
+
+    // or
+    // compileOnly("ink.ptms.core:v11200:11200")
+    // compileOnly("ink.ptms:nms-all:1.0.0")
+
     compileOnly(kotlin("stdlib"))
     compileOnly(fileTree("libs"))
-    compileOnly("com.google.code.gson:gson:2.8.8")
-    // taboo("top.maplex.arim:Arim:1.3.2") 小工具库
 }
 
 tasks.withType<JavaCompile> {
