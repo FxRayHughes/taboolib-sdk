@@ -36,12 +36,8 @@ dependencies {
     // taboo("top.maplex.arim:Arim:1.3.2") 小工具库
 
     compileOnly("com.google.code.gson:gson:2.8.8")
-
-    compileOnly("ink.ptms.core:v12105:12105-minimize)
-
-    // or
-    // compileOnly("ink.ptms.core:v11200:11200")
-    // compileOnly("ink.ptms:nms-all:1.0.0")
+    compileOnly("ink.ptms.core:v11200:11200")
+    compileOnly("ink.ptms:nms-all:1.0.0")
 
     compileOnly(kotlin("stdlib"))
     compileOnly(fileTree("libs"))
