@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     java
-    id("io.izzel.taboolib") version "2.0.27"
+    id("io.izzel.taboolib") version "2.0.30"
     kotlin("jvm") version "2.3.0"
 }
 
